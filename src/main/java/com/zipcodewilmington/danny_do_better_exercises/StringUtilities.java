@@ -1,4 +1,4 @@
-package com.zipcodewilmington.danny_do_better_exercises;  
+package com.zipcodewilmington.danny_do_better_exercises;
 
 /**
  * Created by dan on 6/14/17.
@@ -67,19 +67,25 @@ public class StringUtilities<stringToReverse1> {
      */
     public static Character getMiddleCharacter(String inputValue){
 
-        int i = inputValue.length()/2;
-        char c;
-        if (i % 2 != 0)
+//        int i = inputValue.length()/2;
+//        char c;
+//        if (i % 2 != 0)
+//
+//        {  c = inputValue.charAt(i);
+//        }
+//
+//        else
+//
+//        {  i-=1;
+//           c = inputValue.charAt(i);
+//        }
+//        return c;
 
-        {  c = inputValue.charAt(i);
-        }
-
+        inputValue.toCharArray();
+        if (inputValue.length() % 2 == 0)
+        return inputValue.charAt(inputValue.length()/2-1);
         else
-
-        {  i-=1;
-           c = inputValue.charAt(i);
-        }
-        return c;
+            return inputValue.charAt(Math.abs(inputValue.length()/2));
     }
 
     /**
