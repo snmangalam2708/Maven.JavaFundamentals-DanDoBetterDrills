@@ -1,10 +1,4 @@
-package com.zipcodewilmington.danny_do_better_exercises;
-
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+package com.zipcodewilmington.danny_do_better_exercises;  
 
 /**
  * Created by dan on 6/14/17.
@@ -114,13 +108,16 @@ public class StringUtilities<stringToReverse1> {
      */
     public static String reverse(String stringToReverse){
 
-        String output = "";
+//        String output = "";
+//
+//        for (int i = stringToReverse.length() - 1; i >= 0; i--) {
+//            output += stringToReverse.charAt(i);
+//        }
+//
+//        return output;
 
-        for (int i = stringToReverse.length() - 1; i >= 0; i--) {
-            output += stringToReverse.charAt(i);
-        }
-
-        return output;
+        StringBuilder sb = new StringBuilder(stringToReverse);
+        return sb.reverse().toString();
 
     }
 }

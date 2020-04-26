@@ -24,7 +24,7 @@ public class MathUtilities {
     public Long add(long baseValue, long difference) {
 
         return Long.sum(baseValue, difference);
-        //return (long)(baseValue + difference);
+
     }
 
     /**
